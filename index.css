@@ -1289,6 +1289,9 @@ text-align: left;
     .section-5{
       margin-top: -100px !important;
     }
+    .technologies-expertise-images{
+      margin-top: 40px;
+    }
     
     .sec5-tech::after {
         content: "";
