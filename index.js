@@ -75,12 +75,43 @@ function openSidebar() {
     
     // Section 3 response Our Services ====>
   
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     var headers = document.querySelectorAll('.ser-res-sec1');
+    //     headers.forEach(function(header) {
+    //         var icon1 = header.querySelector('.fas.fa-image');
+    //         var icon = header.querySelector('.toggle-icon .icon');
+    //         var label = header.querySelector('label'); // Select the label inside the header
+    //         var content = header.nextElementSibling;
+    
+    //         header.addEventListener('click', function() {
+    //             if (content.style.display === 'none' || content.style.display === '') {
+    //                 content.style.display = 'block';
+    //                 icon1.style.backgroundColor = '#2CA068';
+    //                 icon1.style.color = '#ffffff';
+    //                 label.style.color = '#000000'; 
+    //                 label.style.fontWeight = 'bold'; 
+    //                 icon.classList.remove('fa-plus');
+    //                 icon.classList.add('fa-minus');
+    //             } else {
+    //                 content.style.display = 'none';
+    //                 icon1.style.backgroundColor = '#E9E9E9';
+    //                 icon1.style.color = '#ACACAC';
+    //                 label.style.fontWeight = '';
+    //                 label.style.color = ''; // Reset the label color when inactive
+    //                 icon.classList.remove('fa-minus');
+    //                 icon.classList.add('fa-plus');
+    //             }
+    //         });
+    //     });
+    // });
+    
+   
     document.addEventListener("DOMContentLoaded", function() {
         var headers = document.querySelectorAll('.ser-res-sec1');
         headers.forEach(function(header) {
-            var icon1 = header.querySelector('.fas.fa-image');
+            var icon1 = header.querySelector('.toggle-icon.sec3-icon-res');
             var icon = header.querySelector('.toggle-icon.icon');
-            var label = header.querySelector('label'); // Select the label inside the header
+            var label = header.querySelector('label');
             var content = header.nextElementSibling;
     
             header.addEventListener('click', function() {
@@ -88,8 +119,8 @@ function openSidebar() {
                     content.style.display = 'block';
                     icon1.style.backgroundColor = '#2CA068';
                     icon1.style.color = '#ffffff';
-                    label.style.color = '#000000'; // Change the label color to active
-                    label.style.fontWeight = 'bold'; // Change the label color to active
+                    label.style.color = '#000000'; 
+                    label.style.fontWeight = 'bold'; 
                     icon.classList.remove('fa-plus');
                     icon.classList.add('fa-minus');
                 } else {
@@ -97,7 +128,7 @@ function openSidebar() {
                     icon1.style.backgroundColor = '#E9E9E9';
                     icon1.style.color = '#ACACAC';
                     label.style.fontWeight = '';
-                    label.style.color = ''; // Reset the label color when inactive
+                    label.style.color = '';
                     icon.classList.remove('fa-minus');
                     icon.classList.add('fa-plus');
                 }
@@ -107,11 +138,96 @@ function openSidebar() {
     
 
 
-
 //  Section - 4 Industry Responsive
 
-var currentContentIndex = 1; 
+// var currentContentIndex = 1; 
 
+// function displayContent(index) {
+//     // Update current content index
+//     currentContentIndex = index;
+
+//     // Hide all content elements
+//     var contents = document.querySelectorAll('.industry_session8_para3');
+//     contents.forEach(function(content) {
+//         content.style.display = 'none';
+//     });
+
+//     // Show the content with the specified index
+//     var contentId = 'content' + index;
+//     var contentToShow = document.getElementById(contentId);
+//     if (contentToShow) {
+//         contentToShow.style.display = 'block';
+//     }
+
+//     // Update button states
+//     var buttons = document.querySelectorAll('.bottom-buttons button');
+//     buttons.forEach(function(button, i) {
+//         button.classList.remove('active');
+//         if (i === index - 1) {
+//             button.classList.add('active');
+//         }
+//     });
+
+//     // Restart the automatic carousel from the selected index
+//     clearInterval(intervalId);
+//     intervalId = setInterval(autoSwitchContent, 2000); 
+// }
+
+// // Function to automatically switch content
+// function autoSwitchContent() {
+
+//     // Display next content
+//     displayContent(currentContentIndex);
+
+//     // Increment index or reset to 1 if reaching the end
+//     currentContentIndex++;
+//     if (currentContentIndex > 8) {
+//         currentContentIndex = 1;
+//     }
+// }
+
+// var intervalId = setInterval(autoSwitchContent, 2000); 
+
+var currentContentIndex = 1;
+var touchStartX = 0;
+var touchEndX = 0;
+
+// Touch start event listener
+document.addEventListener('touchstart', function(event) {
+    touchStartX = event.touches[0].clientX;
+});
+
+// Touch end event listener
+document.addEventListener('touchend', function(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+// Function to handle swipe gesture
+function handleSwipe() {
+    var swipeThreshold = 50; // Adjust as needed
+    var deltaX = touchEndX - touchStartX;
+
+    if (deltaX > swipeThreshold) {
+        // Swipe right, go to previous content
+        currentContentIndex--;
+        if (currentContentIndex < 1) {
+            currentContentIndex = 8; // Assuming there are 8 contents
+        }
+        displayContent(currentContentIndex);
+    } else if (deltaX < -swipeThreshold) {
+        // Swipe left, go to next content
+        currentContentIndex++;
+        if (currentContentIndex > 8) {
+            currentContentIndex = 1;
+        }
+        displayContent(currentContentIndex);
+    }
+}
+
+// Rest of your existing code...
+
+// Function to display content
 function displayContent(index) {
     // Update current content index
     currentContentIndex = index;
@@ -145,19 +261,19 @@ function displayContent(index) {
 
 // Function to automatically switch content
 function autoSwitchContent() {
-
     // Display next content
-    displayContent(currentContentIndex);
-
-    // Increment index or reset to 1 if reaching the end
     currentContentIndex++;
+
+    // Reset index if it exceeds the total number of contents
     if (currentContentIndex > 8) {
         currentContentIndex = 1;
     }
+
+    displayContent(currentContentIndex);
 }
 
+// Trigger the automatic content switching
 var intervalId = setInterval(autoSwitchContent, 2000); 
-
 
 
 
