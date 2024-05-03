@@ -244,6 +244,18 @@ text-align: left;
   font-weight: 700;
 }
 
+.active-label::after{
+  content: " ";
+    position: absolute;
+    top: 70%;
+    margin-left: 10px;
+    width: 32px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #2CA068;
+
+}
+
 
 .section-3{
     width: 100%;
@@ -385,7 +397,7 @@ text-align: left;
   .section3-btn1{
     margin-top: 60px;
     height: 43px;
-    width: 311px;
+    width: 281px;
     border-radius: 8px;
     border: none;
     color: #fff;
@@ -756,7 +768,7 @@ text-align: left;
   .sec4-btn{
     margin-top: 50px;
     float: right;
-    margin-right: 55px;
+    margin-right: -10px;
   }
 
 @media (min-width: 1200px) {
@@ -1839,7 +1851,7 @@ text-align: left;
 
     }
     .section7-col2{
-        margin-top: 30px !important;
+        margin-top: 100px !important;
         width: 315px !important;
         margin-left: 15px;
         height: 750px;
@@ -1866,7 +1878,7 @@ text-align: left;
     }
     .sec7-arrows{
         z-index: 20;
-        margin-left: 180px;
+        margin-left: 110px;
         position: absolute ;
         margin-top: 410px !important;
     }
@@ -1890,7 +1902,7 @@ text-align: left;
 
     }
     .section7-col2{
-        margin-top: 30px !important;
+        margin-top: 100px !important;
         width: 315px !important;
         margin-left: 15px;
         height: 650px;
@@ -1915,7 +1927,7 @@ text-align: left;
     }
     .sec7-arrows{
         z-index: 20;
-        margin-left: 230px;
+        margin-left: 140px;
         position: absolute ;
         margin-top: 410px !important;
     }
@@ -1937,7 +1949,7 @@ text-align: left;
 
     }
     .section7-col2{
-        margin-top: 30px !important;
+        margin-top: 100px !important;
         width: 385px !important;
         margin-left: 15px;
         height: 650px;
@@ -1959,7 +1971,7 @@ text-align: left;
     }
     .sec7-arrows{
         z-index: 20;
-        margin-left: 270px;
+        margin-left: 170px;
         position: absolute ;
         margin-top: 413px !important;
     }
@@ -2138,10 +2150,16 @@ text-align: left;
     /* margin-right: 180px; */
   }
   
+  .about-session__title{
+    font-weight: 600;
+    color: #000000;
+  }
+  
   .about_session10_image_p1 {
 
     font-size: 14px;
-    font-weight: 600;
+    color: #000000;
+    font-weight: 700;
     line-height: 17.6px;
     /* text-align: center; */
     margin-top: 10px;
@@ -2345,8 +2363,8 @@ text-align: left;
   
   .about-session__profile-name {
     color: #000000;
-    font-weight: 500;
-    /* margin-top: -25px; */
+    /* font-weight: 500; */
+    color: #676968;
     margin-left: 10px;
   }
   
@@ -2369,6 +2387,12 @@ text-align: left;
     height: 4px;
     border-radius: 8px;
     background-color: #2CA068;
+  }
+
+  .about_session10_button_div span{
+    color: #676968;
+    position: absolute;
+    margin-left: 5px;
   }
   
   .form-top {
