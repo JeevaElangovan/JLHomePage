@@ -140,53 +140,8 @@ function openSidebar() {
 
 //  Section - 4 Industry Responsive
 
-// var currentContentIndex = 1; 
 
-// function displayContent(index) {
-//     // Update current content index
-//     currentContentIndex = index;
-
-//     // Hide all content elements
-//     var contents = document.querySelectorAll('.industry_session8_para3');
-//     contents.forEach(function(content) {
-//         content.style.display = 'none';
-//     });
-
-//     // Show the content with the specified index
-//     var contentId = 'content' + index;
-//     var contentToShow = document.getElementById(contentId);
-//     if (contentToShow) {
-//         contentToShow.style.display = 'block';
-//     }
-
-//     // Update button states
-//     var buttons = document.querySelectorAll('.bottom-buttons button');
-//     buttons.forEach(function(button, i) {
-//         button.classList.remove('active');
-//         if (i === index - 1) {
-//             button.classList.add('active');
-//         }
-//     });
-
-//     // Restart the automatic carousel from the selected index
-//     clearInterval(intervalId);
-//     intervalId = setInterval(autoSwitchContent, 2000); 
-// }
-
-// // Function to automatically switch content
-// function autoSwitchContent() {
-
-//     // Display next content
-//     displayContent(currentContentIndex);
-
-//     // Increment index or reset to 1 if reaching the end
-//     currentContentIndex++;
-//     if (currentContentIndex > 8) {
-//         currentContentIndex = 1;
-//     }
-// }
-
-// var intervalId = setInterval(autoSwitchContent, 2000); 
+var intervalId = setInterval(autoSwitchContent, 4000); 
 
 var currentContentIndex = 1;
 var touchStartX = 0;
@@ -256,7 +211,7 @@ function displayContent(index) {
 
     // Restart the automatic carousel from the selected index
     clearInterval(intervalId);
-    intervalId = setInterval(autoSwitchContent, 2000); 
+    intervalId = setInterval(autoSwitchContent, 4000); 
 }
 
 // Function to automatically switch content
@@ -273,7 +228,7 @@ function autoSwitchContent() {
 }
 
 // Trigger the automatic content switching
-var intervalId = setInterval(autoSwitchContent, 2000); 
+var intervalId = setInterval(autoSwitchContent, 4000); 
 
 
 
