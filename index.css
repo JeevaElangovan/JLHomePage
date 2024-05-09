@@ -48,6 +48,23 @@ p{
 
 }
 
+
+.dropdown-toggle::after {
+  border-top-color: green !important;
+}
+
+/* Custom CSS to change carousel control button color to green */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: green !important;
+}
+
+/* Custom CSS to change carousel control button icon color to white */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: white;
+}
+
 /* Navbar logo styles */
 .nav-logo {
   width: 210px !important;
@@ -159,38 +176,13 @@ text-align: left;
       margin-left: -10px;
     }
 }
-@media (max-width:425px){
-  .hero-hr{
-    display: none;
-  }
-  .hero-sec-newBtn{
-    margin-top: 35px;
-  }
-  .section-1-part1{
-    margin-top: -30px !important;
-  }
-  .hero-sec-newBtn-2{
-    display: none !important;
 
-  }
-  .hero-sec-newImg-2{
-    display: none;
-  }
-}
-@media (min-width:426px){
-  .hero-sec-newImg{
-    display: none;
-  }
-  .hero-sec-newBtn{
-    display: none;
-  }
-}
 /* ----Section 1----- */
 
 /* About Us Section - 2 */
 
 .About-sec2btn1 button {
-    margin-top: 50px;
+    margin-top: 30px;
     background: linear-gradient(90deg, #248B97 0%, #23899C 10.5%, #2CA068 86%, #2CA068 100%);
     color: #fff;
     font-weight: 500;
@@ -222,12 +214,11 @@ text-align: left;
 }
 
 @media (max-width: 767px) {
-    .About-sec2-part2 h1{
-        margin-top: 30px;
+    .About-sec2-part2{
+        
     }
     .About-sec2-part2 p{
-        text-align: justify;
-        margin-left: -3px;
+        text-align: left;
     }
     .About-sec2-img2{
         margin-top: 50px ;
@@ -243,15 +234,15 @@ text-align: left;
    .About-section-2 p {
         font-weight: 400; 
      }
-     .About-sec2-part2 h1 span.text-success::after {
+     .About-sec2-part2 h1 span::after {
         content: "";
         position: absolute;
-        top: 25px;
+        top: 28px;
         left:55px !important;
         bottom: -5px;
         left: 0;
-        width: 50px;
-        height: 4px;
+        width: 28px !important;
+        height: 3px;
         border-radius: 5px;
         border: none;
         background-color: #2CA068;
@@ -446,6 +437,7 @@ text-align: left;
         margin-left: 200px;
         
     }
+   
 
     .section3-part3-icon{
        
@@ -505,9 +497,9 @@ text-align: left;
         position: absolute;
         top: 51%;
         margin-left: 15px;
-        width: 54px;
-        height: 4px;
-        border-radius: 5px;
+        width: 28px !important;
+        height: 3px !important;
+        border-radius: 50px !important;
         background-color: #2CA068;
     }
     .sec3-icon-res {
@@ -531,7 +523,7 @@ text-align: left;
         margin-left: 12px;
     }
     .service-response-section3 p{
-        text-align: justify;
+        text-align: left;
     }
     
     .ser-res-sec1 .sec3-icon-res {
@@ -827,9 +819,9 @@ text-align: left;
     position: absolute;
     top: 51%;
     margin-left: 15px;
-    width: 54px;
-    height: 4px;
-    border-radius: 5px;
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 50px !important;
     background-color: #2CA068;
 }
 
@@ -949,7 +941,9 @@ text-align: left;
  
 
 }
+
 /* media resposive industry served  */
+
  @media (min-width:1024px){
     .industry_session8_maindiv{
         display: none;
@@ -1020,17 +1014,17 @@ text-align: left;
         margin-top: 50px !important;
 
     }
-    .industry_session8_para3 h4::after{
-        content: "";
-        position: absolute;
-        top: 60%;
-        margin-left: 15px;
-        width: 54px;
-        height: 2px;
-        border-radius: 5px;
-        background-color:#fff;
+    .industry_session8_para3 h4::before{
+      content: "";
+      position: absolute;
+      margin-left: 0px;
+      width: 50px;
+      height: 1px;
+      margin-top: 33px;
+      border-radius: 3px;
+      background-color:#fff;
 
-    }
+  }
     .industry_session8_para3 h4{
         position: absolute;
         width: 70%;
@@ -1317,15 +1311,19 @@ text-align: left;
     .technologies-expertise-images{
       margin-top: 40px;
     }
+
+    .technologies-head1 {
+      margin-left: -20px !important;
+    }
     
     .sec5-tech::after {
         content: "";
         position: absolute !important;
         /* margin-top: 0px; */
         margin-left: 10px;
-        width: 47px;
-        height: 4px;
-        border-radius: 5px;
+        width: 28px !important;
+        height: 3px !important;
+        border-radius: 50px !important;
         background-color: #2CA068;
     }
     .section5-btn1 button{
@@ -1358,9 +1356,9 @@ text-align: left;
         position: absolute !important;
         /* margin-top: 0px; */
         margin-left: 10px;
-        width: 47px;
-        height: 4px;
-        border-radius: 5px;
+        width: 28px !important;
+        height: 3px !important;
+        border-radius: 50px !important;
         background-color: #2CA068;
     }
     .section5-btn1 button{
@@ -1390,9 +1388,9 @@ text-align: left;
         position: absolute !important;
         /* margin-top: 0px; */
         margin-left: 10px;
-        width: 27px;
-        height: 4px;
-        border-radius: 5px;
+        width: 28px !important;
+        height: 3px !important;
+        border-radius: 50px !important;
         background-color: #2CA068;
     }
     .section5-btn1 button{
@@ -1586,14 +1584,19 @@ text-align: left;
     position: absolute;
     top: 56%;
     margin-left: 10px;
-    width: 50px;
-    height: 4px;
-    border-radius: 5px;
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 50px !important;
     background-color: #2CA068;
     }
     .responsive-section-6{
         margin-top: 100px;
     }
+    .responsive-section6-content1 p,
+    .responsive-section6-content p{
+      margin-top: 15px;
+    }
+    
     .responsive-section-6 .col-md-12 button {
       margin: 20px 0px;
       height: 30px;
@@ -1873,6 +1876,11 @@ text-align: left;
     .sec7-head{
         font-size: 30px; 
    }
+   .sec7-head::after{
+      width: 28px !important;
+        height: 3px !important;
+        border-radius: 50px !important;
+   }
     .section7-col1{
         width: 315px !important;
         margin-left: 15px;
@@ -1889,10 +1897,19 @@ text-align: left;
         margin-left: 80px !important;
     }
     .sec7-project-img1{
-      margin-left: 10px;
+      margin-left: 5px;
 
 
     }
+
+    .section-7-colen{
+      margin-top: 20px;
+    }
+    .our-testimonial-para1{
+      margin-top: 80px !important;
+      margin-right: 10px !important;
+    }
+
     .sec7-proect-manager{
         margin-left: 60px !important;
     }
@@ -1924,6 +1941,11 @@ text-align: left;
     .sec7-head{
         font-size: 30px;
     }
+    .sec7-head::after{
+      width: 28px !important;
+        height: 3px !important;
+        border-radius: 50px !important;
+   }
     .section7-col1{
         width: 315px !important;
         margin-left: 15px;
@@ -1947,11 +1969,18 @@ text-align: left;
         margin-left: -30px;
     }
     .sec7-project-img1{
-      margin-left: 10px;
+      margin-left: 5px;
     }
 
     .sec7-dots-container{
         width: 50%;
+    }
+    .section-7-colen{
+      margin-top: 20px;
+    }
+    .our-testimonial-para1{
+      margin-top: 80px !important;
+      margin-right: 10px !important;
     }
     .sec7-arrows{
         z-index: 20;
@@ -1971,11 +2000,19 @@ text-align: left;
 
   }
   @media (min-width:376px) and (max-width:425px){
+    .sec7-head{
+      font-size: 35px;
+  }
     .section7-col1{
         width: 385px !important;
         margin-left: 15px;
 
     }
+    .sec7-head::after{
+      width: 28px !important;
+        height: 3px !important;
+        border-radius: 50px !important;
+   }
     .section7-col2{
         margin-top: 100px !important;
         width: 385px !important;
@@ -1992,6 +2029,14 @@ text-align: left;
     .sec7-small-content{
         margin-top: 20px !important;
         margin-left: -10px;
+    }
+
+    .section-7-colen{
+      margin-top: 20px;
+    }
+    .our-testimonial-para1{
+      margin-top: 80px !important;
+      margin-right: 10px !important;
     }
 
     .sec7-dots-container{
@@ -2292,6 +2337,10 @@ text-align: left;
     width: 100%;
     margin-left: 0px;
   }
+
+  .about_session10_button {
+    margin-top: 5px; 
+  }
   
     .about_session10_para1 {
       font-size: 32px;
@@ -2299,6 +2348,11 @@ text-align: left;
       /* margin-left: 90px; */
       margin-top: 20px;
       margin: 0px 5px;
+    }
+    .about_session10_para1::after{
+      width: 28px !important;
+      height: 3px !important;
+      border-radius: 50px !important;
     }
     .about_session10_span {
       font-size: 32px;
@@ -2571,6 +2625,12 @@ text-align: left;
       font-size: 20px;
       margin-bottom: -1px;
       margin-bottom: 20px;
+    }
+
+    .footer-column h3{
+      color: #676968 !important;
+      font-size: 16px !important;
+      font-weight: 400 !important;
     }
   
     .form-container .form-content .form-paragraph {
