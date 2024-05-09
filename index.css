@@ -1364,6 +1364,9 @@ text-align: left;
     .section5-btn1 button{
       margin-left: 60px;
     }
+    .technologies-head1 {
+      margin-left: -20px !important;
+    }
     .technologies-backend-img,
     .technologies-mobility-img,
     .technologies-design-img,
@@ -1381,6 +1384,9 @@ text-align: left;
     .sec5-tech {
         position: relative;
       font-size: 23px;
+    }
+    .technologies-head1 {
+      margin-left: -20px !important;
     }
     
     .sec5-tech::after {
