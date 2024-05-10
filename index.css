@@ -156,6 +156,34 @@ text-align: left;
 .sec1-btn button{
  font-weight: 500;
 }
+
+@media(max-width:425px){
+.hero-section-button{
+  display: none !important;
+}
+.hero-section-img1{
+  display: none !important;
+}
+.hero-sec-btn1{
+  display: block !important;
+  margin: 20px auto !important;
+}
+.hero-section-row{
+  margin-top: -60px !important;
+}
+}
+
+@media(min-width:426px){
+.hero-sec-img2{
+  display: none !important;
+}
+.hero-sec-btn1{
+  display: none !important;
+}
+
+}
+
+
 @media (max-width: 991px) {
     .section1-btn1 {
         display: block;
