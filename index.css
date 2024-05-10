@@ -171,6 +171,9 @@ text-align: left;
 .hero-section-row{
   margin-top: -60px !important;
 }
+.hero-sec-img2{
+  margin-left: -40px !important;
+}
 }
 
 @media(min-width:426px){
