@@ -481,8 +481,12 @@ text-align: left;
 
   @media (max-width:320px){
     .ser-res-sec1{
-      margin-left: 10px;
+      margin-left: 40px !important;
   }
+  .ser-res-sec1 .fa-light{
+    margin-left: 5px !important;
+  }
+
   }
 
   @media (max-width:425px){
