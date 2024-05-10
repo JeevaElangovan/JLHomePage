@@ -2568,7 +2568,9 @@ text-align: left;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
-  
+  .profilename p{
+    color: #000000 !important;
+  }
   label {
     color: #676968;
   }
@@ -2669,6 +2671,11 @@ text-align: left;
     }
     .profilename{
       font-size: 18px;
+      color: #000000 !important;
+
+    }
+    .profilename p{
+      color: #000000 !important;
     }
     .profiletext{
       font-size: 14px;
