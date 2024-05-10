@@ -1313,9 +1313,11 @@ text-align: left;
     }
 
     .technologies-head1 {
-      margin-left: -20px !important;
+      margin-left: 5px !important;
     }
-    
+    .section5-part-1{
+      margin-left: -25px;
+    }
     .sec5-tech::after {
         content: "";
         position: absolute !important;
@@ -1365,7 +1367,10 @@ text-align: left;
       margin-left: 60px;
     }
     .technologies-head1 {
-      margin-left: -20px !important;
+      margin-left: 5px !important;
+    }
+    .section5-part-1{
+      margin-left: -25px;
     }
     .technologies-backend-img,
     .technologies-mobility-img,
@@ -1386,8 +1391,12 @@ text-align: left;
       font-size: 23px;
     }
     .technologies-head1 {
-      margin-left: -20px !important;
+      margin-left: 5px !important;
     }
+    .section5-part-1{
+      margin-left: -25px;
+    }
+    
     
     .sec5-tech::after {
         content: "";
