@@ -479,6 +479,12 @@ text-align: left;
 
   /* Our Service response = Section - 3 */
 
+  @media (max-width:320px){
+    .ser-res-sec1{
+      margin-left: 10px;
+  }
+  }
+
   @media (max-width:425px){
     
     .service-res-show-down {
@@ -2475,6 +2481,7 @@ text-align: left;
   .form-control:hover{
     border-color: #2CA068;
   }
+  
   .form-head::after {
     content: '';
     position: absolute;
@@ -2612,6 +2619,14 @@ text-align: left;
   .arrowimage {
     margin-left: 610px;
   }
+
+  .form-control:focus {
+    border-color: #2CA068 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none;
+  }
+
+
   @media (max-width: 768px) {
     /*--------- Form -------------------*/
     .form-background{
