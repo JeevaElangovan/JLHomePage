@@ -125,6 +125,12 @@ text-align: left;
   margin-left: 20px !important;
 }
 
+@media (max-width:425px){
+  .nav-logo{
+    height: 30px !important;
+    width: 140px !important;
+  }
+}
 
 
 /* ----NavBar--- */
@@ -1802,6 +1808,14 @@ text-align: left;
     
   
   }
+  .our-testimonial-para1{
+    padding-right: 10px;
+    
+  }
+  .our-testimonial-para2{
+    padding-right: 10px;
+  }
+
   .bold-icon{
     font-weight: bold;
   }
@@ -1841,7 +1855,7 @@ text-align: left;
   .section-7-colen{
     position: absolute;
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 3%;
   }
   
   .sec7-proect-manager{
@@ -1857,6 +1871,9 @@ text-align: left;
     margin-top: 8px;
     margin-left: 9px;
 
+  }
+  .sec7-proect-manager{
+    margin-top: 40px !important;
   }
   .sec7-proect-manager p{
    margin-top: 10px;
@@ -1960,6 +1977,7 @@ text-align: left;
 
     .section-7-colen{
       margin-top: 20px;
+      margin-left: 10px;
     }
     .our-testimonial-para1{
       margin-top: 80px !important;
@@ -2033,6 +2051,7 @@ text-align: left;
     }
     .section-7-colen{
       margin-top: 20px;
+      margin-left: 10px;
     }
     .our-testimonial-para1{
       margin-top: 80px !important;
@@ -2089,6 +2108,7 @@ text-align: left;
 
     .section-7-colen{
       margin-top: 20px;
+      margin-left: 10px;
     }
     .our-testimonial-para1{
       margin-top: 80px !important;
