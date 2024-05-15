@@ -1,41 +1,53 @@
 // navBar=====>
 
-// Function to open sidebar
-function openSidebar() {
+  // Function to open sidebar 
+  function openSidebar() {
     document.querySelector('.sidebar').classList.add('active');
     document.querySelector('body').classList.add('sidebar-open');
-  }
+}
 
-  // Function to close sidebar
-  function closeSidebar() {
+// Function to close sidebar
+function closeSidebar() {
     document.querySelector('.sidebar').classList.remove('active');
     document.querySelector('body').classList.remove('sidebar-open');
-  }
+}
 
+function toggleDropdown(dropdownId) {
+    var dropdown = document.getElementById(dropdownId + '-dropdown');
+    var icon = document.getElementById(dropdownId + '-icon');
 
-  // Function to toggle dropdown
-  function toggleDropdown(id) {
-    var dropdown = document.getElementById(id + '-dropdown');
-    var icon = document.getElementById(id + '-icon');
-    if (dropdown.style.display === "none") {
-      dropdown.style.display = "block";
-      icon.classList.remove('bi-chevron-down');
-      icon.classList.add('bi-chevron-up');
+    // Close all dropdowns except the one being opened
+    var dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(function (d) {
+        if (d.id !== dropdownId + '-dropdown' && d.style.display === 'block') {
+            d.style.display = 'none';
+            var associatedIcon = document.getElementById(d.id.replace('-dropdown', '-icon'));
+            associatedIcon.classList.remove('bi-chevron-up');
+            associatedIcon.classList.add('bi-chevron-down');
+        }
+    });
+
+    // Toggle the display and icon class of the current dropdown
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+        icon.classList.remove('bi-chevron-up');
+        icon.classList.add('bi-chevron-down');
     } else {
-      dropdown.style.display = "none";
-      icon.classList.remove('bi-chevron-up');
-      icon.classList.add('bi-chevron-down');
+        dropdown.style.display = 'block';
+        icon.classList.remove('bi-chevron-down');
+        icon.classList.add('bi-chevron-up');
     }
-  }
+}
 
-  // Toggle sidebar on navbar toggler click
-  document.querySelector('.navbar-toggler').addEventListener('click', function () {
+
+// Toggle sidebar on navbar toggler click
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
     if (document.querySelector('.sidebar').classList.contains('active')) {
-      closeSidebar(); // Close sidebar if already open
+        closeSidebar(); // Close sidebar if already open
     } else {
-      openSidebar(); // Open sidebar if closed
+        openSidebar(); // Open sidebar if closed
     }
-  });
+});
 
 
 
