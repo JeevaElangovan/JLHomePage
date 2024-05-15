@@ -1808,6 +1808,7 @@ text-align: left;
     
   
   }
+ 
   .our-testimonial-para1{
     padding-right: 10px;
     
@@ -2806,7 +2807,7 @@ text-align: left;
 
   /* -------------------Footer ---------------------*/
 
-  .footer {
+ .footer {
     background-color: #ffffff;
     padding: 10px;
     margin-top: 50px;
@@ -2825,8 +2826,8 @@ text-align: left;
     display: none; 
   }
   
-  .footer-menu.active {
-    display: block;
+  .footer-menu.active-footer {
+    display: block !important;
   }
   
   .footer-menu li {
@@ -2841,6 +2842,8 @@ text-align: left;
     color: #000000;
     font-weight: 500;
   }
+
+  
   
   .footer-border {
     height: 1px;
@@ -2850,7 +2853,12 @@ text-align: left;
   .footer-text3 {
     display: flex; 
 }
-  .footer .icon {
+
+.footer-text3 i{
+  margin-left: 0px !important;
+
+} 
+ .footer .icon {
     height: 32px;
     width: 32px;
     background-color: #f3f3f3;
@@ -2866,6 +2874,9 @@ text-align: left;
     color: #000000;
   }
   
+  .footer-text1{
+    margin-top: 6px;
+  }
   .footer-text1, .footer-text2 {
     font-size: 14px;
   }
@@ -2920,9 +2931,12 @@ text-align: left;
     .footer-menu {
       display: none; 
     }
+    .footer-column h3{
+      color:#676968;
+    }
   
-    .footer-menu.active {
-      display: block; 
+    .footer-menu.active-footer {
+      display: block !important; 
     }
     .footer-line{
     display: block;
@@ -2938,7 +2952,13 @@ text-align: left;
   .footer-text2{
     margin-top: 15px;
   }
+  .footer-text3 i{
+    margin-left: 1px !important;
+  
   }
+  }
+
+
 
 
 /* Last 3 */
