@@ -441,7 +441,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Add click event listener to the icon
         h3.addEventListener('click', function() {
             // Toggle the active class on the menu when the icon is clicked
-            menu.classList.toggle('active');
+            menu.classList.toggle('active-footer');
   
             // Toggle the icon between chevron-down and chevron-up
             h3.querySelector('i').classList.toggle('bi-chevron-down');
